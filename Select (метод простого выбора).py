@@ -5,9 +5,9 @@ print("Исходный массив")
 print(arr)
 k = 0
 alg_count = [0, 0]
-for k in range(0, DIM - 1):  # -1, т.к. последний элемент обменивать уже не надо
-    m = k  # в m хранится минимальное значение
-    i = k + 1  # откуда начинать поиск минимума (элемент следующий за k)
+for k in range(0, DIM - 1): 
+    m = k  
+    i = k + 1  
     for i in range(i, DIM):
         alg_count[0] += 1
         if arr[i] < arr[m]:
